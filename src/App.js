@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React + Docker + Github Actions
+          Learn React
         </a>
       </header>
     </div>
