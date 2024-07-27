@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code from repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install NodeJS # node is already available in ubuntu-latest. check github runners so can avoid this step if version matches
         uses: actions/setup-node@v3
         with:
