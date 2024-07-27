@@ -1,0 +1,19 @@
+name: test-project
+on:
+  push:
+    branches:
+      - 'master'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code from repo
+        uses: actions/checkout@v3
+      - name: Install NodeJS # node is already available in ubuntu-latest. check github runners so can avoid this step if version matches
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.15.1
+      - name: Install dependencies
+        run: npm ci # install locked versions
+      - name: Run tests
+        run: npm run test

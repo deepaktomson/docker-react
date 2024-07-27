@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React + Docker + Travis CI
+          React + Docker + Github Actions
         </a>
       </header>
     </div>
