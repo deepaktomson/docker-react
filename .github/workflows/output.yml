@@ -1,0 +1,9 @@
+name: output information
+on: workflow_dispatch
+jobs:
+  info: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output github context
+        run: echo "${{ toJSON(github) }}" # github is reserved keyword in context. Github action contexts and github action expresssions
+
